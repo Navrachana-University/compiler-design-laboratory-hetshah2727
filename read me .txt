@@ -1,0 +1,33 @@
+read.me file: 
+
+*A brief descritption of my project:*
+This project is a minimalist compiler and interpreter for a custom programming language where all keywords are written in reverse—for example, print becomes tnirp, if becomes fi, and else becomes esle. The language supports basic arithmetic operations (+, -, *, /), variable assignments, conditional statements (nested included), and output printing, effectively functioning as a simple calculator. The compiler performs lexical analysis and parsing, converting the reversed source code into Three Address Code (TAC), which serves as an intermediate representation. An interpreter then processes the TAC to execute the program logic and produce results. This project demonstrates key concepts in compiler construction, including syntax parsing, intermediate code generation, and interpretation, with a creative twist in language design.
+
+
+Name: *Het Shah*
+
+Enrollment ID: *22001006*
+
+
+
+
+*Step 1: Install dependencies* 
+sudo apt-get install -y flex bison
+
+
+*Step 2: Compile the compiler*
+flex lex.l
+bison -d parser.y
+gcc lex.yy.c parser.tab.c -o compiler
+
+
+*Step 3: Run the compiler on input.txt*
+compiler input.txt output.txt
+
+
+*Step 4: Compile the interpreter*
+gcc interpreter.c -o interpreter
+
+
+*Step 5: Run the interpreter*
+interpreter

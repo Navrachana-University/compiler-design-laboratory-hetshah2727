@@ -1,0 +1,23 @@
+x = 5;
+y = 10;
+
+
+tnirp x + y; 
+
+tnirp x * y;
+
+tnirp y / x;
+
+tnirp y - x;
+
+
+fi (x < y) {
+    tnirp x;
+    fi (x < y) {
+        tnirp y;
+}
+} esle {
+    tnirp y;
+}
+
+
